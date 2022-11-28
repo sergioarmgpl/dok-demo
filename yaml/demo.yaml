@@ -107,3 +107,21 @@ spec:
           value: "YOUR_PASSWORD"
         resources: {} 
 status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dok-demo
+  name: dok-demo
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: dok-demo
+  type: LoadBalancer
+status:
+  loadBalancer: {}
