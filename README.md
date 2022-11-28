@@ -6,3 +6,5 @@ curl -X POST -H "Accept: application/json" \
 http://$LB:3000/position/1
 
 curl HTTP://$LB:3000/position/2
+
+kubectl port-forward --address 0.0.0.0 svc/longhorn-frontend 5555:80 -n longhorn-system
