@@ -95,7 +95,7 @@ spec:
     metadata: 
       creationTimestamp: null
       labels:
-        app: metrics
+        app: dok-demo
     spec:
       containers:
       - image: sergioarmgpl/dok_demo
